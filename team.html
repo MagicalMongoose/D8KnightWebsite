@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team | D8 Knight</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div style="padding-top: 10%;"></div>
+    <div class="navbar" style="text-align: center;">
+        <span>D8 Knight</span>
+        <button onclick="toggleMenu()" style="height: 40px; width: 40px; float: right; margin-right: 10px; background-color: var(--primary-color); color: var(--light-color); font-size: 24px; border: none; border-radius: 50%; cursor: pointer;">☰</button> <!-- Added square button -->
+        <div id="popupMenu" class="popup-menu" style="display:none;">
+            <a href="main.html">Home</a>
+            <a href="about-us.html">About Us</a>
+        </div>
+    </div>
+    <h2>Meet Our Team</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Drew Lickman</td>
+            <td>CEO & Founder</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>Gameplay Designer</td>
+        </tr>
+        <tr>
+            <td>Samantha Green</td>
+            <td>Head Chef</td>
+        </tr>
+    </table>
+    <footer>
+        <p>&copy; 2024 D8 Knight. All rights reserved.</p>
+        <p>Contact us at d8knight.business@gmail.com</p>
+    </footer>
+    
+    <script src="toggleMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #d80000;
+    --secondary-color: #281713;
+    --gray-color: #333;
+    --light-color: #fff6f1;
+    --background-color: #d8d8d8;
+}
+
+.navbar {
+    position: fixed; /* Changed from sticky to fixed to stick to the very top */
+    top: 0;
+    left: 0;
+    color: var(--light-color);
+    background-color: var(--gray-color);
+    overflow: hidden;
+    width: 100%; /* Ensure navbar spans the entire width */
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+    text-align: right;
+}
+
+.navbar span {
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--light-color);
+    padding: 14px;
+    text-decoration: none;
+    display: inline-block; /* Changed from float to display inline-block for alignment */
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.popup-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 40px; /* Adjust based on the navbar height */
+    background-color: var(--gray-color);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.popup-menu a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(---color);
+}
+
+h1, h2, h3 {
+    color: #111111;
+    margin-left: 20px; /* Added margin-left to compensate for the adjusted navbar position */
+}
+
+p {
+    line-height: 1.6;
+    padding: 0 20px; /* Added padding to maintain layout for text elements */
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 20px 0;
+    padding: 0 20px; /* Added padding to maintain layout for images */
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0 20px; /* Adjusted padding to maintain layout for tables */
+    background-color: #333; /* Dark grey background for a modern look */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Retained shadow for depth */
+    transition: 0.3s; /* Retained smooth transition for hover effects */
+}
+
+table:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); /* Slightly darker shadow when table is hovered */
+}
+
+table, th, td {
+    border: 1px solid #242424; /* Darker border color for a stronger look */
+}
+
+th, td {
+    padding: 15px; /* Retained padding for better readability */
+    text-align: left;
+    border-bottom: 1px solid #242424; /* Darker bottom border to each cell for definition */
+    color: #d8d8d8; /* Light grey text for readability against the dark background */
+}
+
+th {
+    background-color: var(--primary-color); /* Dark red background for headers */
+    color: var(--light-color); /* Retained white text for contrast */
+    font-weight: bold; /* Retained bold font for headers */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Smaller font size for mobile devices */
+    }
+    img {
+        width: 100%; /* Full width images on smaller screens */
+    }
+}
+
+footer {
+    background-color: var(--gray-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+
+
