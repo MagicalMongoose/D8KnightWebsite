@@ -1,9 +1,9 @@
 :root {
     --primary-color: #d80000;
     --secondary-color: #281713;
-    --gray-color: #333;
-    --light-color: #fff6f1;
-    --background-color: #d8d8d8;
+    --background-color: #333;
+    --dark-color: #111111;
+    --text-color: #d8d8d8;
     --default-indent: 20px;
 }
 
@@ -27,13 +27,19 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    color: var(--light-color);
-    background-color: var(--gray-color);
+    color: var(--text-color);
+    background-color: var(--dark-color);
     width: 100%;
-    /* Ensure navbar spans the entire width */
     z-index: 1000;
-    /* Ensure navbar stays on top of other content */
-    text-align: right;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .navbar span {
@@ -41,15 +47,33 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: var(--primary-color);
-    text-align: center;
+    text-align: left;
+    display: inline; 
 }
 
 .navbar a {
-    color: var(--light-color);
+    color: var(--text-color);
     padding: 14px;
     text-decoration: none;
     display: inline-block;
     /* Changed from float to display inline-block for alignment */
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
 }
 
 .navbar a:hover {
@@ -74,39 +98,15 @@ body {
     text-align: left;
 }
 
-button {
-    height: 40px;
-    width: 40px;
-    float: right;
-    margin-right: 10px;
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    font-size: 24px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    color: #111111;
-    margin-left: var(--default-indent);
-    /* Added margin-left to compensate for the adjusted navbar position */
-}
-
+h6,
 p {
-    line-height: 1.6;
-    padding: 0;
+    color: var(--text-color);
     margin-left: var(--default-indent);
-    ;
-
 }
 
 a {
@@ -154,23 +154,22 @@ td {
     text-align: left;
     border-bottom: 1px solid #242424;
     /* Darker bottom border to each cell for definition */
-    color: var(--light-color);
+    color: var(--text-color);
     /* Light grey text for readability against the dark background */
 }
 
 th {
     background-color: var(--primary-color);
     /* Dark red background for headers */
-    color: var(--light-color);
+    color: var(--text-color);
     /* Retained white text for contrast */
     font-weight: bold;
     /* Retained bold font for headers */
 }
 
 footer {
-    background-color: var(--gray-color);
+    background-color: var(--dark-color);
     color: white;
-    text-align: center;
     padding: 0px;
     position: relative;
     margin-top: auto;
