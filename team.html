@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Team | D8 Knight</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div style="padding-top: 10%;"></div>
     <div class="navbar" style="text-align: center;">
         <span>D8 Knight</span>
-        <button onclick="toggleMenu()" style="height: 40px; width: 40px; float: right; margin-right: 10px; background-color: var(--primary-color); color: var(--light-color); font-size: 24px; border: none; border-radius: 50%; cursor: pointer;">☰</button> <!-- Added square button -->
+        <button onclick="toggleMenu()"
+            style="height: 40px; width: 40px; float: right; margin-right: 10px; background-color: var(--primary-color); color: var(--light-color); font-size: 24px; border: none; border-radius: 50%; cursor: pointer;">☰</button>
+        <!-- Added square button -->
         <div id="popupMenu" class="popup-menu" style="display:none;">
             <a href="main.html">Home</a>
             <a href="about-us.html">About Us</a>
@@ -33,11 +37,16 @@
             <td>Head Chef</td>
         </tr>
     </table>
-    <footer>
+    <p style="text-align: center;">Welcome to our team! We are always looking for talented individuals to join us. If
+        you are interested in a career with us, please apply for a job.
+    </p>
+
+    <footer style="position: absolute; bottom: 0; width: 100%;">
         <p>&copy; 2024 D8 Knight. All rights reserved.</p>
         <p>Contact us at d8knight.business@gmail.com</p>
     </footer>
-    
+
     <script src="toggleMenu.js"></script>
 </body>
+
 </html>

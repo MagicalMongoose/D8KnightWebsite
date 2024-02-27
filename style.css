@@ -16,6 +16,9 @@ body {
         "header"
         "main"
         "footer";
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -23,9 +26,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     color: var(--light-color);
     background-color: var(--gray-color);
-    overflow: hidden;
     width: 100%;
     /* Ensure navbar spans the entire width */
     z-index: 1000;
@@ -82,11 +85,17 @@ button {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     color: #111111;
     margin-left: var(--default-indent);
     /* Added margin-left to compensate for the adjusted navbar position */
@@ -159,12 +168,14 @@ th {
 }
 
 footer {
-    display: grid;
     background-color: var(--gray-color);
     color: white;
     text-align: center;
-    padding: 10px;
-    position: absolute;
+    padding: 0px;
+    position: relative;
+    margin-top: auto;
+    left: 0;
+    right: 0;
     bottom: 0;
     width: 100%;
     visibility: visible;
