@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>About Us | D8 Knight</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div class="navbar" style="text-align: center;">
         <span>D8 Knight</span>
-        <button onclick="toggleMenu()" style="height: 40px; width: 40px; float: right; margin-right: 10px; background-color: var(--primary-color); color: var(--light-color); font-size: 24px; border: none; border-radius: 50%; cursor: pointer;">☰</button> <!-- Added square button -->
+        <button onclick="toggleMenu()"
+            style="height: 40px; width: 40px; float: right; margin-right: 10px; background-color: var(--primary-color); color: var(--light-color); font-size: 24px; border: none; border-radius: 50%; cursor: pointer;">☰</button>
+        <!-- Added square button -->
         <div id="popupMenu" class="popup-menu" style="display:none;">
             <a href="main.html">Home</a>
             <a href="team.html">Team</a>
@@ -16,13 +20,15 @@
     <div style="padding-top: 10%;"></div> <!-- Added padding to move the text lower -->
     <h2>About Us</h2>
     <p>
-        At D8 Knight, we specialize in providing an immersive social gaming experience that combines augmented reality, gourmet food, and 3D printed souvenirs to enhance your entertainment like never before.
+        At D8 Knight, we specialize in providing an immersive social gaming experience that combines augmented reality,
+        gourmet food, and 3D printed souvenirs to enhance your entertainment like never before.
     </p>
-    <footer>
+    <footer style="position: absolute; bottom: 0; width: 100%;">
         <p>&copy; 2024 D8 Knight. All rights reserved.</p>
         <p>Contact us at d8knight.business@gmail.com</p>
     </footer>
-    
+
     <script src="toggleMenu.js"></script>
 </body>
+
 </html>
